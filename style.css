@@ -8,3 +8,71 @@ body{
     height: 100vh;
     background: #0F62FE;
 }
+
+#head-text{
+    margin-top: 50px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #0F62FE;
+}
+
+.conainer{
+    width: 40%;
+    top: 30%;
+    left: 50%;
+    background: white;
+    border-radius: 1px;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+}
+
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+}
+
+#newtask input{
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 15px;
+    border: 2px solid #33b1ff;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #0D75EC;
+}
+
+#newtask button{
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #0F62FE;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.tasks{
+    position: absolute;
+    border-radius: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 0px;
+    justify-content: space-between;
+}
