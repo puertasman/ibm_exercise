@@ -76,3 +76,37 @@ body{
     margin-top: 0px;
     justify-content: space-between;
 }
+
+.tasks.overflow{
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+.delete{
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    text-align: right;
+    margin-left: auto;
+}
+
+.task {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.task label p {
+    margin-left: 10px;
+}
+
+.task label {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}

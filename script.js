@@ -7,7 +7,7 @@ taskInput.addEventListener("keyup",(e)=>{
     if (e.key == "Enter"){
         createTask();
     }
-})
+});
 
 //the onclick event for the "Add" button
 document.querySelector("#push").onclick = function(){
@@ -21,7 +21,8 @@ function createTask(){
     }
     else{
         //this block insert HTML that create each task into the task area div element
-        taskSection.innerHTML +='<div class="task"><label id="taskname"><input onclick="updateTask(this)" type="checkbox" id="check-task"><p>$document.querySelector("#newtask input").value}</p></label><div class="delete"><i class="uil uil-trash"></i></div></div>'
+        taskSection.innerHTML +=
+`<div class="task"><label id="taskname"><input onclick="updateTask(this)" type="checkbox" id="check-task"><p>${document.querySelector("#newtask input").value}</p></label><div class="delete"><i class="uil uil-trash"></i></div></div>`;
         var current_tasks = document.querySelectorAll(".delete");
         for (var i = 0; i < current_tasks.length; i++){
             current_tasks[i].onclick = function () {
