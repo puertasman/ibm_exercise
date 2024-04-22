@@ -41,4 +41,4 @@ function updateTask(task){
     else{
         taskItem.classList.remove("checked");
     }
-}
+} 
